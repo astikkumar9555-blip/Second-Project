@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Seat Booking</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+    <div class="first">
+        <div class="first-div">
+            <h1>Student Seat Booking</h1>
+            <p>Book your preferred seat easily</p>
+        </div>
+       
+
+        <section class="second">
+            <h2>Student Information</h2>
+            <div class="Information">
+                <div class="input-data">
+                    <label for="studentName">Student Name</label>
+                    <input type="text"id="studentName" placeholder="Enter your name">
+                </div>
+
+                <div class="input-data">
+                    <label for="studentId">Student ID</label>
+                    <input type="text"id="studentId" placeholder="Enter your ID">
+                </div>
+
+                <div class="input-data">
+                    <label for="domain">Domain</label>
+
+                    <select id="domain">
+                        <option value="">Select Domain</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="AI / ML">AI/ML</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Cyber Security">Cyber Security</option>
+                    </select>
+                </div>
+
+                <div class="input-data">
+                    <label for="branch">Branch</label>
+                    <select id="branch">
+                        <option value="">Select Branch</option>
+                        <option value="CSE">CSE</option>
+                        <option value="CS">CS</option>
+                        <option value="IT">IT</option>
+                        <option value="ECE">ECE</option>
+                        <option value="ME">ME</option>
+                    </select>
+                </div>
+
+            </div>
+
+        </section>
+
+
+       
+        <section class="card">
+          <h2>Select Your Seat</h2>
+             <div class="seat-information">
+                 <div>
+                    <span class="legend available"></span>
+                    Available
+                </div>
+
+                <div>
+                    <span class="legend selected"></span>
+                    Selected
+                </div>
+
+                <div>
+                    <span class="legend booked"></span>
+                    Booked
+                </div>
+
+            </div>
+
+          <div id="seatContainer" class="seat-container"></div>
+          </section>
+
+
+        
+        <section class="summary">
+             <h2>Booking Summary</h2>
+             <div class="summary-line">
+                <span>Student</span>
+                <strong id="summaryName">---</strong>
+            </div>
+
+            <div class="summary-line">
+                <span>Student ID</span>
+                <strong id="summaryId">---</strong>
+            </div>
+
+            <div class="summary-line">
+                <span>Domain</span>
+                <strong id="summaryDomain">---</strong>
+            </div>
+
+            <div class="summary-line">
+                <span>Branch</span>
+                <strong id="summaryBranch">---</strong>
+            </div>
+
+            <div class="summary-line">
+                <span>Selected Seat</span>
+                <strong id="summarySeat">---</strong>
+            </div>
+
+            <div class="summary-line total">
+                <span>Total Price</span>
+                <strong>Rs<span id="totalPrice">0</span></strong>
+            </div>
+            <button id="confirm" class="confirm">
+                Confirm Booking
+            </button>
+        
+        </section>
+
+        <section id="result" class="button result">
+            <h2>Booking Confirmed!</h2>
+              <div id="resultfinal"></div>
+        </section>
+        
+        <button id="reset" class="reset-button">
+            Reset Booking
+        </button>
+
+        </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
