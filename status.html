@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Status</title>
+    <style>
+        body{
+             background: linear-gradient(to right ,lightgrey,lightblue,
+            lightgrey);
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .main-h1{
+            color: blue;
+            height: 40px;
+            width: 100%;
+            text-transform: uppercase;
+         }
+         .main-h1:hover{
+            box-shadow: 0px 0px 26px 0.53px tomato;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+            
+            border-radius: 20px;
+             word-spacing: 10px;
+             letter-spacing: 1px;
+            /* transform:translateZ(-10px);
+            transition: width 5s linear; */
+         }
+        .main p{
+            color: rgb(11, 11, 12);
+            font-size: 40px;
+            margin-top: 0px;
+        }
+        .main-2{
+            height: 370px;
+            width: 270px;
+            background: linear-gradient(to right ,lightgrey,lightblue,
+            lightgrey);
+            margin-left: 600px;
+            
+        }
+        .main-2-name{
+             padding-left: 15px;
+             padding-top: 10px;
+        }
+        .main-2-name h1{
+            color: rgb(11, 30, 239);
+        }
+        .main-2-name input{
+            border-radius: 20px;
+            border-color: black;
+            font-size: 15px;
+            gap: 20px;
+            padding: 7px 0px 7px 0px;
+            margin-left: 20px;
+        }
+        .main-2-name label{
+            padding-left: 28px;
+            
+        }
+        .main-2-name input:hover{
+                box-shadow: 0px 0px 50px 0.5px rgb(98, 212, 21);
+                cursor: pointer;
+        }
+        .main-2-name button{
+            border-radius: 20px;
+            border-color: black;
+            margin-top: 30px;
+            margin-left: 60px;
+            font-size: 25px;
+            background-color: rgba(0, 0, 0, 0.949);
+            color: white;
+        }
+        .main-2-name button:hover{
+            box-shadow: 0px 0px 5px 5px lightpink;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 class="main-h1">Event Seat Booking</h1>
+    </div>
+
+    <div class="main">
+        <p>Reserve Your Seat. Explore <br>
+        Your Domain. Build Your Future.</p> 
+    </div>
+
+    <div class="main-2">
+         
+        <div class="main-2-name">
+              <h1>Enter Detail</h1>
+             <label for="Name">Name - </label><br>
+             <input type="text" placeholder=" Your Name"><br>
+    
+             <label for="domain">Domain -</label><br>
+             <input type="text" placeholder="Enter Your Domain"><br>
+
+               <label for="branch">Branch -</label><br>
+             <input type="text" placeholder="Enter Your Branch"><br>
+
+             <button>Proceed</button>
+        </div>
+
+    </div>
+</body>
+</html>
