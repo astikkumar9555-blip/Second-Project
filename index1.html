@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Seat Booking</title>
+    <title>Event Seat Booking</title>
     <link rel="stylesheet" href="css.css">
 </head>
 
@@ -11,45 +11,41 @@
 
     <div class="first">
         <div class="first-div">
-            <h1>Student Seat Booking</h1>
+            <h1>Event Seat Booking</h1>
             <p>Book your preferred seat easily</p>
         </div>
        
 
         <section class="second">
-            <h2>Student Information</h2>
+            <h2> Information</h2>
             <div class="Information">
                 <div class="input-data">
-                    <label for="studentName">Student Name</label>
-                    <input type="text"id="studentName" placeholder="Enter your name">
+                    <label for="Name"> Name</label>
+                    <input type="text"id="Name" placeholder="Enter your name">
                 </div>
 
                 <div class="input-data">
-                    <label for="studentId">Student ID</label>
-                    <input type="text"id="studentId" placeholder="Enter your ID">
+                    <label for="Id"> ID</label>
+                    <input type="text"id="Id" placeholder="Enter your ID">
                 </div>
 
                 <div class="input-data">
-                    <label for="domain">Domain</label>
+                    <label for="domain">Seat Category</label>
 
-                    <select id="domain">
-                        <option value="">Select Domain</option>
-                        <option value="Web Development">Web Development</option>
-                        <option value="AI / ML">AI/ML</option>
-                        <option value="Data Science">Data Science</option>
-                        <option value="Cyber Security">Cyber Security</option>
-                    </select>
+                    <select id="SeatCategory">
+                        <option value="">Select Seat</option>
+                        <option value="VIP">VIP</option>
+                        <option value="Premium">Premium</option>
+                        <option value="Regular">Regular</option>
+                 </select>
                 </div>
 
                 <div class="input-data">
-                    <label for="branch">Branch</label>
-                    <select id="branch">
-                        <option value="">Select Branch</option>
-                        <option value="CSE">CSE</option>
-                        <option value="CS">CS</option>
-                        <option value="IT">IT</option>
-                        <option value="ECE">ECE</option>
-                        <option value="ME">ME</option>
+                    <label for="Venue">Venue</label>
+                    <select id="Venue">
+                        <option value="">Select Venue</option>
+                        <option value="Vedanta Farm">Vedanta Farm</option>
+                        
                     </select>
                 </div>
 
@@ -87,23 +83,23 @@
         <section class="summary">
              <h2>Booking Summary</h2>
              <div class="summary-line">
-                <span>Student</span>
+                <span>Name</span>
                 <strong id="summaryName">---</strong>
             </div>
 
             <div class="summary-line">
-                <span>Student ID</span>
+                <span> ID</span>
                 <strong id="summaryId">---</strong>
             </div>
 
             <div class="summary-line">
-                <span>Domain</span>
-                <strong id="summaryDomain">---</strong>
+                <span>Seat Category</span>
+                <strong id="summarySeatCategory">---</strong>
             </div>
 
             <div class="summary-line">
-                <span>Branch</span>
-                <strong id="summaryBranch">---</strong>
+                <span>Venue</span>
+                <strong id="summaryVenue">---</strong>
             </div>
 
             <div class="summary-line">

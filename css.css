@@ -147,7 +147,7 @@ body{
 .resultfinal h2{
     color: #16a34a;
 }
-.result-row {
+.result-line {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
